@@ -5,7 +5,7 @@ function checkLogin(event) {
   
     // بررسی یوزرنیم و رمز عبور
     if (username === "venteda" && password === "DCKPE") {
-      window.location.href = 'index2.html'; // مسیر صفحه مقصد را وارد کنید
+      window.location.href = 'HOME.html'; // مسیر صفحه مقصد را وارد کنید
     } else {
       alert('Username or password is wrong!');
     }
