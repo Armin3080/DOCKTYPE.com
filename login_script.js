@@ -26,7 +26,7 @@ function validateLogin() {
 
     // یوزرنیم و پسورد صحیح را اینجا تعیین کنید
     const correctUsername = "venteda";
-    const correctPassword = "DIDITAL";
+    const correctPassword = "DIGITAL";
 
     if (username === correctUsername && password === correctPassword) {
         // کاربر را به صفحه دیگری هدایت کنید
