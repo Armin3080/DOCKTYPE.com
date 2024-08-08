@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. venteda</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: #00ff00;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .mr-robot-button {
+            background-color: transparent;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .mr-robot-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #00ff00;
+            z-index: -1;
+            transition: transform 0.3s ease;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .mr-robot-button:hover::before {
+            transform: scaleX(1);
+        }
+
+        .mr-robot-button:hover {
+            color: #0d0d0d;
+        }
+
+        .mr-robot-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="mr-robot-button" onclick="goToNextPage()">Enter</button>
+    </div>
+
+    <script>
+        function goToNextPage() {
+            window.location.href = "login.html"; // آدرس صفحه مقصد
+        }
+    </script>
+</body>
+</html>
