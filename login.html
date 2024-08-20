@@ -21,6 +21,23 @@
         </form>
     </div>
     <audio autoplay="1" id="type-sound" src="typing.mp3"></audio>
-   <script src="login_script.js"></script>
+    <script>
+        // Define your username and password here
+        const correctUsername = 'venteda';
+        const correctPassword = 'DIGITAL';
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the form from submitting in the default way
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            if (username === correctUsername && password === correctPassword) {
+                alert('Login successful!');
+                // Redirect or handle successful login
+            } else {
+                alert('Invalid username or password.');
+            }
+        });
+    </script>
 </body>
 </html>
